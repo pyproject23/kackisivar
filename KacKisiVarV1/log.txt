@@ -1,0 +1,7 @@
+ID: 1 crossed going down at Sun Nov 29 21:16:49 2020
+ID: 2 crossed going down at Sun Nov 29 21:16:57 2020
+ID: 3 crossed going down at Sun Nov 29 21:17:04 2020
+ID: 5 crossed going up at Sun Nov 29 21:17:06 2020
+ID: 7 crossed going down at Sun Nov 29 21:17:10 2020
+ID: 9 crossed going up at Sun Nov 29 21:17:11 2020
+ID: 10 crossed going up at Sun Nov 29 21:17:11 2020
