@@ -1,2 +1,7 @@
-# kackisivar
-Anlık bina içinde kaç kişi olduğunu istatistiksel olarak gösteren bir uygulama
+# PeopleCounter
+Basic People Counter using Python and OpenCV
+
+Install anaconda
+pip install opencv-python
+
+python PeopleCounter.py
