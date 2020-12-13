@@ -1,0 +1,7 @@
+#PyQt5
+opencv-python
+opencv-contrib-python
+pillow
+matplotlib
+numpy
+pandas

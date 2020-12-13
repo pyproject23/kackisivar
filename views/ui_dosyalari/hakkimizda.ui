@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HakkimizdaForm</class>
+ <widget class="QWidget" name="HakkimizdaForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>615</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hakkında</string>
+  </property>
+  <widget class="QPlainTextEdit" name="plainTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>571</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="plainText">
+    <string>Hakkında
+Anlık olarak bina içinde kaç kişi olduğunu istatistiksel olarak gösteren bir uygulamadır.
+
+Uygulamada; kameradan alınan görüntüler anlık olarak işlenip binaya giren ve çıkan kişi sayısı takip edilmektedir.</string>
+   </property>
+   <property name="backgroundVisible">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelProjeAdi">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>10</y>
+     <width>381</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <pointsize>36</pointsize>
+     <weight>10</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+font: 87 36pt &quot;Arial Black&quot;;</string>
+   </property>
+   <property name="text">
+    <string>KAÇ KİŞİ VAR</string>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="commandLinkButton">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>200</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Github</string>
+   </property>
+   <property name="description">
+    <string>Github adresine gitmek için tıklayınız</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

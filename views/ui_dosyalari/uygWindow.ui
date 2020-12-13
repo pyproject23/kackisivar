@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1051</width>
+    <height>634</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Kaç Kişi Var</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">* {
+font-size:15px;
+font-family:Century Gothic, sans-serif;
+}
+#MainWindow{
+	background-image: url(:images/bg.png);
+
+} 
+QWidget{
+	background-image: url(:images/bg.png);
+
+}
+QLineEdit{
+color:#8d98a1;
+background-color:#405361;
+font-size:18px;
+border-style:outset;
+border-radius:10px
+}
+QPushButton{
+background-color:#ced1d8;
+border-style:outset;
+border-radius:10px
+}
+QPushButton:pressed{
+background-color:rgb(224,0,0);
+border-style:inset;
+border-radius:10px
+}
+QCheckBox{
+background:rgba(85,170,255,0);
+border-style:outset;
+color:white;
+}
+QLabel{
+background:rgba(85,170,255,0);
+color:white;
+font-style:italic bold;
+font-size:14px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>661</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_video">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>641</width>
+       <height>511</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>30</y>
+      <width>311</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_giren_sayisi">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>120</y>
+      <width>311</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_saatlik">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>271</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_4">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>350</y>
+      <width>311</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_gunluk">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>271</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1051</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::ActionsContextMenu</enum>
+   </property>
+   <widget class="QMenu" name="menuAnasayfa">
+    <property name="contextMenuPolicy">
+     <enum>Qt::ActionsContextMenu</enum>
+    </property>
+    <property name="title">
+     <string>Dosya</string>
+    </property>
+    <addaction name="actionKapat"/>
+   </widget>
+   <widget class="QMenu" name="menuAyarlar">
+    <property name="contextMenuPolicy">
+     <enum>Qt::PreventContextMenu</enum>
+    </property>
+    <property name="title">
+     <string>Ayarlar</string>
+    </property>
+    <addaction name="actionAyar"/>
+   </widget>
+   <widget class="QMenu" name="menuKullanicilar">
+    <property name="contextMenuPolicy">
+     <enum>Qt::ActionsContextMenu</enum>
+    </property>
+    <property name="title">
+     <string>Kullanıcılar</string>
+    </property>
+    <addaction name="actionKullanicilar"/>
+   </widget>
+   <widget class="QMenu" name="menuLoglar">
+    <property name="contextMenuPolicy">
+     <enum>Qt::ActionsContextMenu</enum>
+    </property>
+    <property name="title">
+     <string>Loglar</string>
+    </property>
+    <addaction name="actionLogKayitlar"/>
+   </widget>
+   <widget class="QMenu" name="menuHakkinda">
+    <property name="title">
+     <string>Hakkında</string>
+    </property>
+    <addaction name="actionHakkinda"/>
+   </widget>
+   <addaction name="menuAnasayfa"/>
+   <addaction name="menuAyarlar"/>
+   <addaction name="menuKullanicilar"/>
+   <addaction name="menuLoglar"/>
+   <addaction name="menuHakkinda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAyarlar">
+   <property name="text">
+    <string>Ayarlar</string>
+   </property>
+   <property name="toolTip">
+    <string>ayar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionAyar">
+   <property name="text">
+    <string>Ayarlar</string>
+   </property>
+  </action>
+  <action name="actionAyarlar_2">
+   <property name="text">
+    <string>Ayarlar</string>
+   </property>
+  </action>
+  <action name="actionKulan_c_lar">
+   <property name="text">
+    <string>Kulanıcılar</string>
+   </property>
+  </action>
+  <action name="actionKapat">
+   <property name="text">
+    <string>Çıkış</string>
+   </property>
+  </action>
+  <action name="actionKullanicilar">
+   <property name="text">
+    <string>Kullanıcılar</string>
+   </property>
+  </action>
+  <action name="actionLogKayitlar">
+   <property name="text">
+    <string>Log Kayıtları</string>
+   </property>
+  </action>
+  <action name="actionHakkinda">
+   <property name="text">
+    <string>Hakkında</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="sources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
