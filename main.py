@@ -10,7 +10,7 @@ if __name__ == "__main__":
     MainWindow = QtWidgets.QMainWindow()
     ui = AnaEkran()
     ui.setupUi(MainWindow)
-    MainWindow.show()
+    # MainWindow.show()
     login = LoginForm()
     login.window = MainWindow
     login.show()
