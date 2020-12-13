@@ -1,7 +1,14 @@
-#PyQt5
-opencv-python
-opencv-contrib-python
-pillow
-matplotlib
-numpy
+cycler (v. 0.10.0)
+kiwisolver (v. 1.3.1)
+matplotlib (v. 3.3.3)
+numpy (v. 1.19.4)
+opencv-contrib-python (v. 4.4.0.46)
+opencv-python (v. 4.4.0.46)
+Pillow (v. 8.0.1)
+pkg-resources
+pyparsing (v. 2.4.7)
+PyQt5 (v. 5.15.2)
+PyQt5-sip (v. 12.8.1)
+python-dateutil (v. 2.8.1)
+python-six (v. 1.15.0)
 pandas
