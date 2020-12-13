@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>437</width>
+    <height>353</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Login Ekranı</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">* {
+font-size:15px;
+font-family:Century Gothic, sans-serif;
+}
+#Form{
+	background-image: url(:/images/bg.png);
+	background:#28595e;
+}
+QFrame{
+border:solid 10px rgb(0,0,0);
+background-image:url(:images/bg.png);
+}
+QLineEdit{
+	color: rgb(114, 159, 207);
+background-color:#405361;
+font-size:18px;
+border-style:outset;
+border-radius:10px
+}
+QPushButton{
+background-color:#ced1d8;
+border-style:outset;
+border-radius:10px
+}
+QPushButton:pressed{
+background-color:rgb(224,0,0);
+border-style:inset;
+border-radius:10px
+}
+QCheckBox{
+background:rgba(85,170,255,0);
+border-style:outset;
+color:white;
+}
+QLabel{
+background:rgba(85,170,255,0);
+color:red;
+font-style:italic bold;
+font-size:16px;
+}</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>18</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>240</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Giriş Yap</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditKullaniciAdi">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>70</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Kullanıcı Adı...</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditParola">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>130</y>
+     <width>261</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
+   <property name="placeholderText">
+    <string>Parola...</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="sources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
