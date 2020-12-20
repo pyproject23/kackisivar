@@ -1,4 +1,4 @@
-# kackisivar
+# KAÇ KİŞİ VAR
 Anlık bina içinde kaç kişi olduğunu istatistiksel olarak gösteren bir uygulama
 
 ### Proje 4 ana bileşenden oluşmaktadır:
@@ -17,7 +17,7 @@ Anlık bina içinde kaç kişi olduğunu istatistiksel olarak gösteren bir uygu
 
 ![Ekranlar](gorseller/ekranlar.png)
 
-### Login Ekran
+### Login Ekranı
 
 ![Login Ekranı](gorseller/login_ekrani.png)
 
