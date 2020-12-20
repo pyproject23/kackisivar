@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>AyarlarForm</class>
+ <widget class="QWidget" name="AyarlarForm">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -17,7 +17,7 @@
    <string>Ayarlar Ekranı</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="sources.qrc">
+   <iconset>
     <normaloff>:/images/bg.png</normaloff>:/images/bg.png</iconset>
   </property>
   <property name="styleSheet">
@@ -25,9 +25,9 @@
 font-size:15px;
 font-family:Century Gothic, sans-serif;
 }
-#Form{
+QWidget{
 	background-image: url(:/images/bg.png);
-
+	background:#28595e
 }
 QLineEdit, QComboBox, QTimeEdit{
 color:#333533;
@@ -232,7 +232,7 @@ font-size:14px;
     <string>SMTP Parola...</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEditKameraTipi">
+  <widget class="QLineEdit" name="lineEditUsbId">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -244,14 +244,17 @@ font-size:14px;
    <property name="focusPolicy">
     <enum>Qt::StrongFocus</enum>
    </property>
+   <property name="maxLength">
+    <number>1</number>
+   </property>
    <property name="echoMode">
     <enum>QLineEdit::Normal</enum>
    </property>
    <property name="placeholderText">
-    <string>Kamera Türü...</string>
+    <string>USB ID (0-1)...</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEditKameraAyari">
+  <widget class="QLineEdit" name="lineEditDemoVideo">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -267,7 +270,7 @@ font-size:14px;
     <enum>QLineEdit::Normal</enum>
    </property>
    <property name="placeholderText">
-    <string>Kamera Ayarı...</string>
+    <string>Demo Video Adı...</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEditKisiLimiti">
@@ -305,27 +308,27 @@ font-size:14px;
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>50</x>
      <y>180</y>
      <width>111</width>
      <height>31</height>
     </rect>
    </property>
    <property name="text">
-    <string>Kamera Ayarı :</string>
+    <string>Demo Video Adı :</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>110</x>
      <y>140</y>
-     <width>111</width>
+     <width>61</width>
      <height>31</height>
     </rect>
    </property>
    <property name="text">
-    <string>Kamrera Türü :</string>
+    <string>USB ID :</string>
    </property>
   </widget>
   <widget class="QCheckBox" name="checkBoxTLS">

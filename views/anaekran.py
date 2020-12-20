@@ -15,6 +15,9 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1051, 634)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/images/nokta.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        MainWindow.setWindowIcon(icon)
         MainWindow.setStyleSheet("* {\n"
 "font-size:15px;\n"
 "font-family:Century Gothic, sans-serif;\n"
@@ -25,35 +28,51 @@ class Ui_MainWindow(object):
 "} \n"
 "QWidget{\n"
 "    background-image: url(:images/bg.png);\n"
+"}\n"
 "\n"
+"QFrame{\n"
+"    background-image: url(:images/bg.png);\n"
+"    border:solid 5px green;\n"
 "}\n"
-"QLineEdit{\n"
-"color:#8d98a1;\n"
-"background-color:#405361;\n"
-"font-size:18px;\n"
-"border-style:outset;\n"
-"border-radius:10px\n"
-"}\n"
+"\n"
 "QPushButton{\n"
-"background-color:#ced1d8;\n"
-"border-style:outset;\n"
-"border-radius:10px\n"
+"    background:red;\n"
+"    color:white;\n"
+"    border-radius:10px\n"
 "}\n"
+"\n"
 "QPushButton:pressed{\n"
-"background-color:rgb(224,0,0);\n"
+"background:red;\n"
 "border-style:inset;\n"
 "border-radius:10px\n"
 "}\n"
-"QCheckBox{\n"
-"background:rgba(85,170,255,0);\n"
-"border-style:outset;\n"
+"QPushButton:hover{\n"
+"background-color:green;\n"
+"color:white;\n"
+"border-style:inset;\n"
+"border-radius:10px\n"
+"}\n"
+"\n"
+"\n"
+"QLabel{\n"
+"/*background:#2c1139;*/\n"
+"background:#1d3239;\n"
 "color:white;\n"
 "}\n"
-"QLabel{\n"
-"background:rgba(85,170,255,0);\n"
-"color:white;\n"
-"font-style:italic bold;\n"
-"font-size:14px;\n"
+"\n"
+"QRadioButton{\n"
+"    background:rgba(85,170,255,0);\n"
+"    color:white;\n"
+"}\n"
+"\n"
+"#label_giren_sayisi{\n"
+"    padding-left:5px;\n"
+"}\n"
+"#labelUyari{\n"
+"    font-size:12px;\n"
+"    font-style:italic;\n"
+"    color:white;\n"
+"    background:rgba(85,170,255,0);\n"
 "}")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -72,7 +91,7 @@ class Ui_MainWindow(object):
         self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_2.setObjectName("frame_2")
         self.label_giren_sayisi = QtWidgets.QLabel(self.frame_2)
-        self.label_giren_sayisi.setGeometry(QtCore.QRect(20, 20, 281, 41))
+        self.label_giren_sayisi.setGeometry(QtCore.QRect(10, 10, 291, 51))
         self.label_giren_sayisi.setText("")
         self.label_giren_sayisi.setObjectName("label_giren_sayisi")
         self.frame_3 = QtWidgets.QFrame(self.centralwidget)
@@ -80,23 +99,40 @@ class Ui_MainWindow(object):
         self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_3.setObjectName("frame_3")
-        self.label_saatlik = QtWidgets.QLabel(self.frame_3)
-        self.label_saatlik.setGeometry(QtCore.QRect(20, 30, 271, 161))
-        self.label_saatlik.setText("")
-        self.label_saatlik.setObjectName("label_saatlik")
+        self.verticalLayoutWidget = QtWidgets.QWidget(self.frame_3)
+        self.verticalLayoutWidget.setGeometry(QtCore.QRect(10, 10, 291, 191))
+        self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
+        self.verticalLayoutSaat = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
+        self.verticalLayoutSaat.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayoutSaat.setObjectName("verticalLayoutSaat")
         self.frame_4 = QtWidgets.QFrame(self.centralwidget)
         self.frame_4.setGeometry(QtCore.QRect(710, 350, 311, 211))
         self.frame_4.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frame_4.setObjectName("frame_4")
-        self.label_gunluk = QtWidgets.QLabel(self.frame_4)
-        self.label_gunluk.setGeometry(QtCore.QRect(20, 30, 271, 141))
-        self.label_gunluk.setText("")
-        self.label_gunluk.setObjectName("label_gunluk")
+        self.verticalLayoutWidget_2 = QtWidgets.QWidget(self.frame_4)
+        self.verticalLayoutWidget_2.setGeometry(QtCore.QRect(10, 10, 291, 191))
+        self.verticalLayoutWidget_2.setObjectName("verticalLayoutWidget_2")
+        self.verticalLayoutGun = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_2)
+        self.verticalLayoutGun.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayoutGun.setObjectName("verticalLayoutGun")
+        self.radioButtonDemo = QtWidgets.QRadioButton(self.centralwidget)
+        self.radioButtonDemo.setGeometry(QtCore.QRect(790, 0, 71, 25))
+        self.radioButtonDemo.setObjectName("radioButtonDemo")
+        self.radioButtonCanli = QtWidgets.QRadioButton(self.centralwidget)
+        self.radioButtonCanli.setGeometry(QtCore.QRect(720, 0, 61, 25))
+        self.radioButtonCanli.setChecked(True)
+        self.radioButtonCanli.setObjectName("radioButtonCanli")
+        self.pushButtonBaslat = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButtonBaslat.setGeometry(QtCore.QRect(860, 0, 151, 27))
+        self.pushButtonBaslat.setObjectName("pushButtonBaslat")
+        self.labelUyari = QtWidgets.QLabel(self.centralwidget)
+        self.labelUyari.setGeometry(QtCore.QRect(40, 570, 641, 19))
+        self.labelUyari.setObjectName("labelUyari")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setEnabled(True)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1051, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1051, 23))
         self.menubar.setContextMenuPolicy(QtCore.Qt.ActionsContextMenu)
         self.menubar.setObjectName("menubar")
         self.menuAnasayfa = QtWidgets.QMenu(self.menubar)
@@ -150,6 +186,10 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Kaç Kişi Var"))
+        self.radioButtonDemo.setText(_translate("MainWindow", "Demo"))
+        self.radioButtonCanli.setText(_translate("MainWindow", "Canlı"))
+        self.pushButtonBaslat.setText(_translate("MainWindow", "Sayımı Başlat"))
+        self.labelUyari.setText(_translate("MainWindow", "* Canlı modda görüntü alamıyorsanız Ayarlar ekranından USB ID bilgisini güncelleyiniz!"))
         self.menuAnasayfa.setTitle(_translate("MainWindow", "Dosya"))
         self.menuAyarlar.setTitle(_translate("MainWindow", "Ayarlar"))
         self.menuKullanicilar.setTitle(_translate("MainWindow", "Kullanıcılar"))

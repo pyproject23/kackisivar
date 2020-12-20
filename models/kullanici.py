@@ -14,7 +14,7 @@ class Kullanici:
 
     def kaydet(self):
         DB.baglan()
-        if (self.id==0) or self.id is None:
+        if self.id == 0 or self.id is None:
             sorgu = "INSERT INTO kullanicilar (kullanici_adi, kullanici_parola, personel_adi_soyadi, personel_mail_adresi, kayit_tarihi)  VALUES (?, ?, ?, ?, ?)"
             veri = [self.kullanici_adi, self.kullanici_parola, self.personel_adi_soyadi, self.personel_mail_adresi, self.kayit_tarihi]
         else:

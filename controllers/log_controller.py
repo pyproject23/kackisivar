@@ -20,7 +20,7 @@ class LogForm(QtWidgets.QWidget, Ui_LogForm):
         # self.tableView.clicked.connect(self.log_sec)
         gelen_veri = self.log.logu_getir()
 
-        veri=[]
+        veri = []
         for kayit in gelen_veri:
             kayit = [kayit[0], kayit[1], kayit[2]]
             veri.append(kayit)
@@ -28,7 +28,7 @@ class LogForm(QtWidgets.QWidget, Ui_LogForm):
         veri = pd.DataFrame(veri, columns=['id', 'Personel Adı', 'Giriş Zamanı'])
 
 
-        if len(kayit) != 0:
+        if len(veri) != 0:
             self.model = TableModel(veri)
             self.tableView.setModel(self.model)
             self.tableView.show()

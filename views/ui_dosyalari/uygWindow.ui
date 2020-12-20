@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Kaç Kişi Var</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="sources.qrc">
+    <normaloff>:/images/nokta.png</normaloff>:/images/nokta.png</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">* {
 font-size:15px;
@@ -24,35 +28,51 @@ font-family:Century Gothic, sans-serif;
 } 
 QWidget{
 	background-image: url(:images/bg.png);
+}
 
+QFrame{
+	background-image: url(:images/bg.png);
+	border:solid 5px green;
 }
-QLineEdit{
-color:#8d98a1;
-background-color:#405361;
-font-size:18px;
-border-style:outset;
-border-radius:10px
-}
+
 QPushButton{
-background-color:#ced1d8;
-border-style:outset;
-border-radius:10px
+	background:red;
+	color:white;
+	border-radius:10px
 }
+
 QPushButton:pressed{
-background-color:rgb(224,0,0);
+background:red;
 border-style:inset;
 border-radius:10px
 }
-QCheckBox{
-background:rgba(85,170,255,0);
-border-style:outset;
+QPushButton:hover{
+background-color:green;
+color:white;
+border-style:inset;
+border-radius:10px
+}
+
+
+QLabel{
+/*background:#2c1139;*/
+background:#1d3239;
 color:white;
 }
-QLabel{
-background:rgba(85,170,255,0);
-color:white;
-font-style:italic bold;
-font-size:14px;
+
+QRadioButton{
+	background:rgba(85,170,255,0);
+	color:white;
+}
+
+#label_giren_sayisi{
+	padding-left:5px;
+}
+#labelUyari{
+	font-size:12px;
+	font-style:italic;
+	color:white;
+	background:rgba(85,170,255,0);
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -103,10 +123,10 @@ font-size:14px;
     <widget class="QLabel" name="label_giren_sayisi">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>20</y>
-       <width>81</width>
-       <height>41</height>
+       <x>10</x>
+       <y>10</y>
+       <width>291</width>
+       <height>51</height>
       </rect>
      </property>
      <property name="text">
@@ -129,18 +149,16 @@ font-size:14px;
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QLabel" name="label_saatlik">
+    <widget class="QWidget" name="verticalLayoutWidget">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>30</y>
-       <width>271</width>
-       <height>161</height>
+       <x>10</x>
+       <y>10</y>
+       <width>291</width>
+       <height>191</height>
       </rect>
      </property>
-     <property name="text">
-      <string/>
-     </property>
+     <layout class="QVBoxLayout" name="verticalLayoutSaat"/>
     </widget>
    </widget>
    <widget class="QFrame" name="frame_4">
@@ -158,19 +176,72 @@ font-size:14px;
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QLabel" name="label_gunluk">
+    <widget class="QWidget" name="verticalLayoutWidget_2">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>30</y>
-       <width>271</width>
-       <height>141</height>
+       <x>10</x>
+       <y>10</y>
+       <width>291</width>
+       <height>191</height>
       </rect>
      </property>
-     <property name="text">
-      <string/>
-     </property>
+     <layout class="QVBoxLayout" name="verticalLayoutGun"/>
     </widget>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonDemo">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>0</y>
+      <width>71</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Demo</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButtonCanli">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>0</y>
+      <width>61</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Canlı</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonBaslat">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>0</y>
+      <width>151</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sayımı Başlat</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelUyari">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>570</y>
+      <width>641</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>* Canlı modda görüntü alamıyorsanız Ayarlar ekranından USB ID bilgisini güncelleyiniz!</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -182,7 +253,7 @@ font-size:14px;
      <x>0</x>
      <y>0</y>
      <width>1051</width>
-     <height>26</height>
+     <height>23</height>
     </rect>
    </property>
    <property name="contextMenuPolicy">

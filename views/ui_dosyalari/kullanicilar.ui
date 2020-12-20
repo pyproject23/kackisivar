@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Form</class>
- <widget class="QWidget" name="Form">
+ <class>FormKullanici</class>
+ <widget class="QWidget" name="FormKullanici">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -18,7 +18,7 @@
 font-size:15px;
 font-family:Century Gothic, sans-serif;
 }
-#Form{
+#FormKullanici{
 	background-image: url(:/images/bg.png);
 	background:#28595e;
 }
@@ -63,8 +63,8 @@ font-size:14px;
    </property>
    <property name="font">
     <font>
-     <family>Century Gothic,sans-serif</family>
-     <pointsize>-1</pointsize>
+     <family>Century Gothic</family>
+     <pointsize>2</pointsize>
     </font>
    </property>
    <property name="title">
@@ -73,16 +73,16 @@ font-size:14px;
    <widget class="QLabel" name="label_12">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>60</x>
       <y>100</y>
-      <width>111</width>
+      <width>51</width>
       <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Century Gothic,sans-serif</family>
-      <pointsize>-1</pointsize>
+      <family>Century Gothic</family>
+      <pointsize>2</pointsize>
       <italic>true</italic>
      </font>
     </property>
@@ -101,28 +101,28 @@ font-size:14px;
     </property>
     <property name="font">
      <font>
-      <family>Century Gothic,sans-serif</family>
-      <pointsize>-1</pointsize>
+      <family>Century Gothic</family>
+      <pointsize>2</pointsize>
       <italic>true</italic>
      </font>
     </property>
     <property name="text">
-     <string>Mail:</string>
+     <string>E-posta Adresi:</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_14">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>40</x>
       <y>150</y>
-      <width>111</width>
+      <width>81</width>
       <height>16</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Century Gothic,sans-serif</family>
-      <pointsize>-1</pointsize>
+      <family>Century Gothic</family>
+      <pointsize>2</pointsize>
       <italic>true</italic>
      </font>
     </property>
@@ -133,16 +133,16 @@ font-size:14px;
    <widget class="QLabel" name="label_15">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>30</x>
       <y>50</y>
-      <width>111</width>
+      <width>91</width>
       <height>20</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Century Gothic,sans-serif</family>
-      <pointsize>-1</pointsize>
+      <family>Century Gothic</family>
+      <pointsize>2</pointsize>
       <italic>true</italic>
      </font>
     </property>
@@ -160,7 +160,7 @@ font-size:14px;
      </rect>
     </property>
     <property name="placeholderText">
-     <string/>
+     <string>Kullanıcı Adı...</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEditParola">
@@ -176,7 +176,7 @@ font-size:14px;
      <enum>QLineEdit::Password</enum>
     </property>
     <property name="placeholderText">
-     <string/>
+     <string>Parola...</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEditKullaniciAdiSoyadi">
@@ -189,10 +189,10 @@ font-size:14px;
      </rect>
     </property>
     <property name="placeholderText">
-     <string/>
+     <string>Personel Adı Soyadı...</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEditKullaniciAdi_5">
+   <widget class="QLineEdit" name="lineEditKullaniciMail">
     <property name="geometry">
      <rect>
       <x>130</x>
@@ -202,7 +202,7 @@ font-size:14px;
      </rect>
     </property>
     <property name="placeholderText">
-     <string/>
+     <string>Kullanıcı E-posta Adresi...</string>
     </property>
    </widget>
   </widget>
@@ -232,8 +232,8 @@ font-size:14px;
     </property>
     <property name="font">
      <font>
-      <family>Century Gothic,sans-serif</family>
-      <pointsize>-1</pointsize>
+      <family>Century Gothic</family>
+      <pointsize>2</pointsize>
      </font>
     </property>
     <property name="text">
@@ -254,8 +254,8 @@ font-size:14px;
     </property>
     <property name="font">
      <font>
-      <family>Century Gothic,sans-serif</family>
-      <pointsize>-1</pointsize>
+      <family>Century Gothic</family>
+      <pointsize>2</pointsize>
      </font>
     </property>
     <property name="text">
@@ -273,8 +273,8 @@ font-size:14px;
     </property>
     <property name="font">
      <font>
-      <family>Century Gothic,sans-serif</family>
-      <pointsize>-1</pointsize>
+      <family>Century Gothic</family>
+      <pointsize>2</pointsize>
      </font>
     </property>
     <property name="text">
@@ -292,8 +292,8 @@ font-size:14px;
     </property>
     <property name="font">
      <font>
-      <family>Century Gothic,sans-serif</family>
-      <pointsize>-1</pointsize>
+      <family>Century Gothic</family>
+      <pointsize>2</pointsize>
      </font>
     </property>
     <property name="text">
@@ -311,8 +311,8 @@ font-size:14px;
     </property>
     <property name="font">
      <font>
-      <family>Century Gothic,sans-serif</family>
-      <pointsize>-1</pointsize>
+      <family>Century Gothic</family>
+      <pointsize>2</pointsize>
      </font>
     </property>
     <property name="text">

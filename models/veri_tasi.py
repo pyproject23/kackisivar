@@ -1,2 +1,3 @@
 class Veri:
-    giris_kullanicisi = []
+    giris_kullanicisi = None
+    anaekran = None
