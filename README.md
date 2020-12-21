@@ -8,6 +8,19 @@ Anlık bina içinde kaç kişi olduğunu istatistiksel olarak gösteren bir uygu
 3. Uyarı sistemi ile verilerin e-posta ile sorumlu kişilere iletilmesi
 4. Saatlik ve günlük istatistiki verilerin sunulması
 
+## Özellikler
+
+* Varsayılan kullanıcı adı: admin parola:admin
+* Bilgileri yerel SQLite veritabanında saklama
+* Kullanıcı yönetimi
+* Log yönetimi
+* Ayarlar yönetimi
+* Mail ile uyarı ve günlük raporları belirlenen görevliye gönderme
+* Anlık giriş çıkış verilerini veritabanına kaydetme
+* Demo modda ve canlı modda kişi sayım işlemini yapma
+* Anlık giriş, çıkış ve içerideki kişi sayılarını gösterme
+* Gün içerisinde saatlik giriş çıkış verilerini grafiksel olarak gösterme
+* İçinde bulunulan ay için günlük giriş çıkış verilerini grafiksel olarak gösterme
 
 # MVC Yapısı
 
@@ -40,3 +53,5 @@ Anlık bina içinde kaç kişi olduğunu istatistiksel olarak gösteren bir uygu
 ### Hakkında Ekranı
 
 ![Hakkında Ekranı](gorseller/hakkinda_ekrani.png)
+
+* Not: models klasöründe örnek demo_kackisivar.sqlite veritabanı dosyası vardır.
