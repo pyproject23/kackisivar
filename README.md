@@ -1,5 +1,6 @@
 # KAÇ KİŞİ VAR
 Anlık bina içinde kaç kişi olduğunu istatistiksel olarak gösteren bir uygulama
+* Projede Python 3.7 sürümü kullanılmıştır.
 
 ### Proje 4 ana bileşenden oluşmaktadır:
 
@@ -22,7 +23,7 @@ Anlık bina içinde kaç kişi olduğunu istatistiksel olarak gösteren bir uygu
 * Gün içerisinde saatlik giriş çıkış verilerini grafiksel olarak gösterme
 * İçinde bulunulan ay için günlük giriş çıkış verilerini grafiksel olarak gösterme
 
-### [Kurulum - Debian ve Windows 10 üzerinde](KURULUM.md "KURULUM")
+### [Kurulum Adımları - Debian ve Windows 10 üzerinde](KURULUM.md "KURULUM")
 
 ## MVC Yapısı
 
