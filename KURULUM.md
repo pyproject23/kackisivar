@@ -10,7 +10,7 @@
 
 #### ` sudo apt install git `
 
-3. Github sayfasından proje dosyaları masaüstüne indirilir.
+3. Github sayfasından proje dosyaları indirilir.
 
 #### ` git clone https://github.com/pyproject23/kackisivar.git `
 
@@ -18,7 +18,7 @@
 
 #### ` cd kackisivar `
 
-5. Sanal ortam oluşturulur.
+5. Sanal ortam (virtual environment) oluşturulur.
 
 #### ` python3 -m venv venv `
 
