@@ -24,7 +24,7 @@ class DB:
 
         imlec.execute('INSERT INTO "kullanicilar" ("kullanici_adi", "kullanici_parola","personel_adi_soyadi") values ("admin","admin","Kaç Kişi Var")')
 
-        imlec.execute('INSERT INTO "ayarlar" ("gorevli_id","demo_video", "kisi_siniri", "mail_gonderme_saati", "usb_id") VALUES (1, "TestVideo.mp4", "100", "18:00:00", 1)')
+        imlec.execute('INSERT INTO "ayarlar" ("gorevli_id","demo_video", "kisi_siniri", "mail_gonderme_saati", "usb_id") VALUES (1, "TestVideo.mp4", "100", "18:00:00", 0)')
 
         vt.commit()
         vt.close()
