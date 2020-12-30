@@ -22,13 +22,13 @@ Anlık bina içinde kaç kişi olduğunu istatistiksel olarak gösteren bir uygu
 * Gün içerisinde saatlik giriş çıkış verilerini grafiksel olarak gösterme
 * İçinde bulunulan ay için günlük giriş çıkış verilerini grafiksel olarak gösterme
 
-* [Kurulum](KURULUM.md "KURULUM")
+### [Kurulum - Debian ve Windows 10 üzerinde](KURULUM.md "KURULUM")
 
-# MVC Yapısı
+## MVC Yapısı
 
 ![Kaç Kişi Var](gorseller/mvc.png)
 
-# Ekranlar
+## Ekranlar
 
 ![Ekranlar](gorseller/ekranlar.png)
 
