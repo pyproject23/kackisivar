@@ -1,6 +1,6 @@
 ## KURULUM
 
-### GNU/Linux Dağıtımlarda Kurulum (Debian - Pardus - Mint - Ubuntu)
+### GNU/Linux Dağıtımlarında Kurulum (Debian - Pardus - Mint - Ubuntu)
 
 ** Kullanıcının ev dizinine kurulum adımları anlatılacaktır.
 
