@@ -4,45 +4,45 @@
 
 ** Masaüstüne kurulum adımları anlatılacaktır.
 
-* [Git](https://git-scm.com/downloads "Git i buradan indiriniz")
+1. [Git](https://git-scm.com/downloads "Git i buradan indiriniz")
 Linkinden Git kurulumu yapılır.
 
-* CMD komut istemcisi açılır.
+2. CMD komut istemcisi açılır.
 
-* Masaüstüne geçiş yapılır.
+3. Masaüstüne geçiş yapılır.
 
-`{ cd Desktop }` veya `{ cd Masaüstü }`
+` cd Desktop ` veya ` cd Masaüstü `
 
-* Github sayfasından proje dosyaları masaüstüne indirilir.
+4. Github sayfasından proje dosyaları masaüstüne indirilir.
 
-`{ git clone https://github.com/pyproject23/kackisivar.git }`
+` git clone https://github.com/pyproject23/kackisivar.git `
 
-* kackisivar proje klasörü içine girilir.
+5. kackisivar proje klasörü içine girilir.
 
-`{ cd kackisivar }`
+` cd kackisivar `
 
-* Sanal ortam oluşturulur.
+6. Sanal ortam oluşturulur.
 
-`{ python -m venv venv }`
+` python -m venv venv `
 
-* Sanal ortam aktif edilir.
+7. Sanal ortam aktif edilir.
 
-`{ venv\\Scripts\\activate.bat }`
+` venv\Scripts\activate.bat `
 
-* Örnek konsol görüntüsü aşağıdaki gibi olmalıdır - en başta (venv) görünmeli.
+8. Örnek konsol görüntüsü aşağıdaki gibi olmalıdır - en başta (venv) görünmeli.
 
 (venv) C:\\Users\\__kullanici_adi__\\Desktop\\kackisivar>
 
-* Gerekli pip setuptools wheel güncellemeleri yapılır.
+9. Gerekli pip setuptools wheel güncellemeleri yapılır.
 
-`{ python -m pip install --upgrade pip setuptools wheel }`
+` python -m pip install --upgrade pip setuptools wheel `
 
-* requirements.txt içerisindeki pkg-resources==0.0.0 satırı silinir.
+10. requirements.txt içerisindeki pkg-resources==0.0.0 satırı silinir.
 
-* pip ile paket kurulumları yapılır.
+11. pip ile paket kurulumları yapılır.
 
-`{ pip install -r requirements.txt }`
+` pip install -r requirements.txt `
 
-* Program çalıştırılır.
+12. Program çalıştırılır.
 
-`{ python main.py }`
+` python main.py `
