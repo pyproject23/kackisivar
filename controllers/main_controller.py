@@ -10,7 +10,7 @@ from controllers.goruntu_isleme import GoruntuIsleme
 from controllers.mail_uyari import Mail
 from controllers.mail_gunluk_rapor import Mail_Gunluk_Rapor
 from matplotlib import pyplot as plt
-from matplotlib.backends.backend_qt4agg import FigureCanvasQTAgg as FigureCanvas
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from controllers.grafik_saatlik import SaatlikGrafik
 from models.veri_tasi import Veri
 import datetime
