@@ -70,7 +70,7 @@ class GunlukRapor:
     def gunluk_giris_cikis_verisini_al(self):
         DB.baglan()
         DB.imlec.execute("select strftime('%d',zaman) as gun, durum, sum(sayi) as toplam  from gunluk_rapor Where strftime('%Y-%m',zaman) = strftime('%Y-%m',date('now','localtime'))   GROUP BY strftime('%d',zaman),durum;")
-        # DB.imlec.execute("select strftime('%H',zaman) as saat, durum, sum(sayi) as toplam  from gunluk_rapor where  date(zaman) = date('now','localtime') GROUP BY strftime('%H',zaman),durum;")
+        # DB.imlec.execute("select strftime('%d',zaman) as gun, durum, sum(sayi) as toplam  from gunluk_rapor Where strftime('%Y-%m',zaman) = strftime('%Y-%m',date('2020-12-12'))   GROUP BY strftime('%d',zaman),durum;")
         sonuclar = DB.imlec.fetchall()
         DB.baglantiyi_kapat()
         gunler = [kayit[0] for kayit in sonuclar if kayit[1] == 0]
